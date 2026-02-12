@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Mendoza · Dev</title>
+    <!-- Fuente tecnológica: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* ========== ESTILOS TECNO / INDUSTRIAL ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0b0f1c;
+            font-family: 'Inter', sans-serif;
+            color: #e6eaff;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-image: 
+                linear-gradient(rgba(18, 52, 114, 0.2) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(18, 52, 114, 0.2) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+
+        .tarjeta {
+            max-width: 880px;
+            background: #131a2c;
+            border: 1px solid #2e3f66;
+            border-radius: 12px;
+            padding: 2.5rem 2.8rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 0 2px rgba(0, 255, 255, 0.1);
+            backdrop-filter: blur(2px);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 0.25rem;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #0088ff;
+            border-bottom: 3px solid #00e0ff;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .bio {
+            background: #0e1420;
+            padding: 1.5rem;
+            margin: 1.8rem 0;
+            border-left: 6px solid #00ffff;
+            border-radius: 0 16px 16px 0;
+            font-size: 1.1rem;
+            color: #c0d0e0;
+            box-shadow: inset 0 0 15px rgba(0, 255, 255, 0.1);
+            font-weight: 400;
+        }
+
+        .grid-enlace-imagen {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 2rem 0 1.5rem;
+        }
+
+        .boton-github {
+            background: transparent;
+            border: 2px solid #00ffff;
+            color: #00ffff;
+            padding: 0.9rem 2.2rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-decoration: none;
+            border-radius: 0px;
+            transition: 0.2s;
+            box-shadow: 0 0 0 #00ffff;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .boton-github:hover {
+            background: #00ffff;
+            color: #0a0f1a;
+            box-shadow: 0 0 20px #00ffff;
+            border-color: #00ffff;
+        }
+
+        .foto-perfil {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #2e3f66;
+            filter: grayscale(80%) contrast(120%);
+            border-radius: 0px;
+            transition: 0.3s;
+            box-shadow: 8px 8px 0 #00a2b0;
+        }
+
+        .foto-perfil:hover {
+            filter: grayscale(0%) contrast(100%);
+            border-color: #00ffff;
+            box-shadow: 0 0 30px #00a2b0;
+        }
+
+        .btn-consola {
+            background: #001c30;
+            border: 2px solid #3e6b8c;
+            color: #b0f0ff;
+            font-size: 1.4rem;
+            font-weight: 700;
+            padding: 1rem 2rem;
+            margin-top: 2rem;
+            width: 100%;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            border-radius: 0;
+            transition: 0.1s;
+            font-family: 'Inter', sans-serif;
+            box-shadow: -5px -5px 0 #0e1a26, 5px 5px 0 #0e1a26;
+        }
+
+        .btn-consola:hover {
+            background: #004466;
+            border-color: #00ffff;
+            color: white;
+            box-shadow: 0 0 15px cyan;
+        }
+
+        .btn-consola:active {
+            transform: scale(0.98);
+        }
+
+        footer {
+            margin-top: 2.8rem;
+            color: #5f7f9f;
+            font-size: 0.85rem;
+            text-align: right;
+            border-top: 1px dashed #2e3f66;
+            padding-top: 1.2rem;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tarjeta">
+        <!-- NOMBRE COMPLETO (masculino) -->
+        <h1>Juan David Paz Trochez</h1>
+
+        <!-- PÁRRAFO DE DESCRIPCIÓN -->
+        <div class="bio">
+            ⚡ Soy un Desarrollador web en formación, entusiasta de la programacion y estructuras de datos. 
+            Me interesa la ciberseguridad y los video juegos (Blood Strike). 
+        </div>
+
+        <!-- ENLACE + IMAGEN en grid flexible -->
+        <div class="grid-enlace-imagen">
+            <a href="https://github.com/GojoSatorouXD" target="_blank" class="boton-github">
+                🔷 GitHub
+            </a>
+            <img class="foto-perfil" 
+                 src="https://i.pinimg.com/1200x/c8/00/48/c80048643e96557e775eafeb1eea2207.jpg" 
+                 alt="Foto de perfil estilo industrial">
+        </div>
+
+        <!-- BOTÓN DE INTERACCIÓN (CONSOLA) -->
+        <button id="consolaBtn" class="btn-consola">🖥️ EJECUTAR</button>
+
+        <footer>
+            ⚙️ taller web · juan david paz trochez · 2026
+        </footer>
+    </div>
+
+    <script>
+        // ========== JAVASCRIPT: RESPUESTA EN CONSOLA ==========
+        function reporteSistema() {
+            console.log(">>> SISTEMA: Hola Mundo desde JavaScript (Juan David Paz Trochez)");
+            console.log(">>> El botón ha sido presionado. Todo en orden.");
+        }
+
+        // Inicialización segura
+        document.addEventListener('DOMContentLoaded', function() {
+            const boton = document.getElementById('consolaBtn');
+            if (boton) {
+                boton.addEventListener('click', reporteSistema);
+                console.log("✅ Módulo de interacción activado. Esperando clics...");
+            } else {
+                console.error("⚠️ No se encontró el elemento 'consolaBtn'");
+            }
+        });
+
+        // Mensaje de arranque
+        console.log("🟢 Página de Juan David Paz Trochez cargada.");
+    </script>
+</body>
+</html>
